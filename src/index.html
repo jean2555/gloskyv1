@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubble Tea Shop</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <a href="#" class="logo"
+          ><img src="../asset/logo1.png" height="100vh" width="100vw"
+        /></a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Actu</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+
+      <div class="content">
+        <div class="textBox">
+          <h2>
+            Not a coffee<br />
+            But a<span> New Experience</span>
+          </h2>
+          <p>Nous bouleversons le monde des rêves !</p>
+          <a href="#">En savoir plus</a>
+        </div>
+
+        <div class="imgBox">
+          <img src="../asset/milk.webp" alt="starbucks-img" class="starbucks" />
+        </div>
+      </div>
+
+      <ul class="thumb">
+        <li>
+          <img
+            src="../asset/thumb1.png"
+            alt="top"
+            onclick="imgSlider('../asset/img1.png');changeCircleColor('#017143')"
+          />
+        </li>
+        <li>
+          <img
+            src="../asset/thumb2.png"
+            alt="top"
+            onclick="imgSlider('../asset/img2.png'); changeCircleColor('#AD6B2B')"
+          />
+        </li>
+        <li>
+          <img
+            src="../asset/thumb3.png"
+            alt="top"
+            onclick="imgSlider('../asset/img3.png');changeCircleColor('#E460BB')"
+          />
+        </li>
+      </ul>
+
+      <script type="text/javascript">
+        function imgSlider(anything) {
+          document.querySelector(".starbucks").src = anything;
+        }
+
+        function changeCircleColor(color) {
+          const circle = document.querySelector(".circle");
+          circle.style.background = color;
+        }
+
+        function toggleMenu() {
+          var menuToggle = document.querySelector(".toggle");
+          var navigation = document.querySelector(".navigation");
+
+          navigation.classList.toggle("active");
+          menuToggle.classList.toggle("active");
+        }
+      </script>
+
+      <!--reseau sociau
+      <ul class="sci">
+        <li><a href="#"><img src="facebook.png" alt="réseau"></a></li>
+        <li><a href="#"><img src="twitter.png" alt="réseau"></a></li>
+        <li><a href="#"><img src="instagram.png" alt="réseau"></a></li>
+      </ul> -->
+    </section>
+  </body>
+</html>
