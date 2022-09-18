@@ -15,11 +15,4 @@ function imgSlider(anything) {
     menuToggle.classList.toggle("active");
   }
 
-  /* page de chargement*/
-
-const loader = document.querySelector('.loader');
-
-window.addEventListener('load',()=>{
-    loader.classList.add('fondu-out')
-})
 
