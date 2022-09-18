@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubble Tea Shop</title>
+    <link rel="stylesheet" href="./menu.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Menu.</a>
+      <div class="toggle" onclick="
+      toggleMenu();"></div>
+      <ul class="navigation">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Actu</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+
+    <section class="banner">
+      <div class="imgBx">
+        <img src="../asset/pe9.jpg" class="active" alt="pe" />
+        <img src="../asset/pe1.jpg" alt="pe" />
+        <img src="../asset/pe6.jpg" alt="pe" />
+
+        <!--first ciycle-->
+        <img src="../asset/pe.jpg" alt="pe" />
+        <img src="../asset/pe8.jpg" alt="pe" />
+        <img src="../asset/pi.jpg" alt="pe" />
+  
+       
+      </div>
+
+      <div class="contentBx">
+        <div class="active">
+          <h2>Coffoe</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
+            ipsam explicabo voluptates. In, cupiditate? Eius in ipsa vero
+            similique alias.
+          </p>
+          <a href="#">Details</a>
+        </div>
+
+        <div>
+          <h2>Nos Frappées</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
+            ipsam explicabo voluptates. In, cupiditate? Eius in ipsa vero
+            similique alias.
+          </p>
+          <a href="#">Details</a>
+        </div>
+
+        <div>
+          <h2>Bubble tea</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
+            ipsam explicabo voluptates. In, cupiditate? Eius in ipsa vero
+            similique alias.
+          </p>
+          <a href="#">Details</a>
+        </div>
+      </div>
+
+      <ul class="controls">
+        <li onclick="prevSlide();nextSlideText();"></li>
+        <li onclick="nextSlide();nextSlideText();"></li>
+      </ul>
+    </section>
+
+    <script src="./menu.js"></script>
+  </body>
+</html>
